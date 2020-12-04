@@ -16,20 +16,33 @@
       HTML & CSS (note: images are provided), such that the document's 
       user-facing output looks something like this:
 
-         You rolled: three
+         You rolled: 3
            _____________
           |             |
           |  0          |
           |      0      |
           |          0  |
-          |_____________|
+          |_____________| 
 
       Before you begin, consider the various ways to achieve this interface using HTML/CSS.
     -->
-    
+      <div class="main">
+        <div class="msg">You rolled: 3</div>
+      <div class="dice">
+        <img class="face" src="img/dice3.svg" alt="Rolled 3">
+        <img class="face face-1" src="img/dice3.svg" alt="Rolled 3">
+      </div>
+      <button class="button" type="button" onclick="theRollDice()"> Click here</button>
+      </div>
 
 
+      
     <script src="js/dice.js"></script>
     <script src="js/script.js"></script>
+
+
+
+
+    
   </body>
 </html>
